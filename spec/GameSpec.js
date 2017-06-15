@@ -24,4 +24,8 @@ describe('Game', function() {
     game.turn('A2')
     expect(game.player2.choices.length).toEqual(1)
   });
+
+  it('two turns adds the integers 1 and 2 to the turns array', function() {
+    expect(game.turns).toEqual([1, 2])
+  });
 });
