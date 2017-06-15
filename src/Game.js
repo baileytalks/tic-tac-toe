@@ -22,5 +22,5 @@
 // };
 
 function Game() {
-  
+  this.turns = []
 }
