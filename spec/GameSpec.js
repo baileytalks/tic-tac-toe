@@ -28,4 +28,9 @@ describe('Game', function() {
   it('two turns adds the integers 1 and 2 to the turns array', function() {
     expect(game.turns).toEqual([1, 2])
   });
+
+  it('a turn with an invalid choice of square is not a turn', function() {
+    game.turn('A8')
+    expect(game.turns.length).toEqual(2)
+  });
 });
